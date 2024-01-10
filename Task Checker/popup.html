@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.bundle.css">
+  <script type="module" src="assets/js/popup.bundle.js"></script>
+  <title>Sproutgigs Task Checker</title>
+</head>
+<body>
+  <header>
+    <h2>
+      <img src="assets/img/icon.png" alt="Logo" class="logo"> Sprout Task Checker
+    </h2>
+    <span class="version" id="version"></span>
+  </header>
+
+  <div class="input-container">
+    <div class="group">
+      <label for="targetCount">Target Count</label>
+      <input type="number" id="targetCount" value="7228">
+    </div>
+    <div class="group">
+      <label for="targetRate">Target Rate</label>
+      <input type="number" id="targetRate" value="100" max="100">
+    </div>
+  
+    <div class="group">
+      <label for="designColor">Success Color</label>
+      <input type="color" id="designColor" value="#22ab59">
+    </div>
+    <div class="group">
+      <label for="enableScroll">Enable Scroll Down</label>
+      <input type="checkbox" id="enableScroll" class="switch" checked>
+    </div>
+  
+    <div class="group">
+      <label for="refreshInterval">Refresh Interval (ms)</label>
+      <input type="number" id="refreshInterval" value="1000" min="300">
+    </div>
+    <div class="group">
+      <label for="maxRefreshAttempts">Max Refresh Attempts</label>
+      <input type="number" id="maxRefreshAttempts" value="1000">
+    </div>
+
+    <div id="logNote" class="log-note"></div>
+
+    <div class="buttonsContainer">
+      <input type="text" id="licenseKey" placeholder="Enter your license key">
+      <button id="activeButton"><i class="ri-seo-line"></i>Active</button>
+      <button id="startButton"><i class="ri-shut-down-line"></i>Start</button>
+      <button id="stopButton" disabled><i class="ri-stop-circle-line"></i>Stop</button>
+    </div>
+  </div>
+  <div class="license-link">Need a license key? Connect us
+    <a href="https://t.me/abdulrahman_othman_1" target="_blank">
+      <i class="ri-telegram-line"></i>
+    </a>
+  </div>
+</body>
+</html>
